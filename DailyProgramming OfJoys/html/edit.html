@@ -8,11 +8,17 @@
 
   <body>
     <h1>Edit Your Information</h1><br>
-    <form action="/action_page.php">
-      First name : <input type="text" name="fname"><br>
-      Last name : <input type="text" name="lname"><br>
-      E-mail : <input type="text" name="lname"><br>
-      <input type="submit" value="Submit">
+    <form class="form" action="edit.php" method="post" enctype="multipart/from-data" autocomplete="off">
+      <div class="alert alert-error"></div>
+      <input type="text" placeholder="User Name" name="username" required />
+      <input type="email" placeholder="Email" name="e_mail" required />
+      <input type="text" placeholder="First Name" name="first_name" required />
+      <input type="text" placeholder="Last Name" name="last_name" required />
+      <input type="text" placeholder="Phone Number" name="phone_number" required />
+      <input type="text" placeholder="Address" name="address" required />
+      <input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
+      <input type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" required />
+      <input type="submit" value="Register" name="register" class="btn btn-block btn-primary" />
     </form>
     <button><a href="account.html">Done</a></button>
   </body>
