@@ -3,7 +3,6 @@
   ini_set('display_errors', 1);
   error_reporting(~0);
   session_start();
-
 ?>
 
 <!doctype html>
@@ -24,11 +23,11 @@
 <!-- Navbar -->
     <nav class="site-header sticky-top py-1">
       <div class="container d-flex flex-column flex-md-row ">
-        <div class="logo">
+        <div class="logo"><a href="index_home.html">
                     <img class="py image-edit logo-set2" src="https://i.imgur.com/LrIcfUC.png"></img>
-                </div>
-        <a class="py-2 logo-set" href="#">Books Never Die</a>
-        <a class="py-2 left-2" href="#">Coins</a>
+              </a>  </div>
+        <a class="py-2 logo-set" href="index_home.php">Books Never Die</a>
+        <a class="py-2 left-2" href="coin.html">Coins = <?php echo $_SESSION["coin"]; ?></a>
         <a class="nav-link dropdown-toggle left" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION["user_name"]; ?></a>
       </div>
     </nav>
@@ -36,7 +35,7 @@
   <br>
   <div class="py-1 mb-2 nav-scroller">
       <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#">Home</a>
+        <a class="p-2 text-muted" href="index_home.php">Home</a>
         <a class="p-2 text-muted" href="#">Promotion</a>
         <a class="p-2 text-muted dropdown-toggle" href="#">Trade</a>
         <a class="p-2 text-muted dropdown-toggle" href="#">Rent</a>
@@ -48,9 +47,18 @@
   </head>
   <body>
     </br>
-    <p>You Name : <?php echo $_SESSION["first_name"]; ?> </p>
+    <p>First Name: <?php echo $_SESSION["first_name"]; ?> </p>
+    <p>Last Name : <?php echo $_SESSION["last_name"]; ?> </p>
+    <p>Tel. : <?php echo $_SESSION["phone_number"]; ?> </p>
+    <p>E-mail : <?php echo $_SESSION["e_mail"]; ?> </p>
+    <p>Address : <?php echo $_SESSION["address"];  ?> </p>
+    </br>
+    <button><a href="logout.php">Logout</a></button>
+    <button><a href="edit.html">edit</a></button>
+    <button><a href="delete.html">close your account</a></button>
+    </br>
     <footer class="blog-footer">
-      <p>Books Never Die. copyright <a href="#">© SIT-KMUTT</a> by <a href="#">DPJ</a> all rights reserved.</p>
+      <p>Books Never Die. copyright <a href="#">© SIT-KMUTT</a> by DPJ all rights reserved.</p>
       <p>
         <a href="#">Back to top</a>
       </p>

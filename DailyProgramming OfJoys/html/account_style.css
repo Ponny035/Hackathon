@@ -1,10 +1,17 @@
+.txt-tag {
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  color: white;
+
+}
+
 .left {
   margin-left: auto;
   margin-right: 0px;
 }
 
 .left-2 {
-  margin-left: 580px;
+  margin-left: 640px;
   margin-right: 0px;
 }
 
@@ -15,11 +22,47 @@
 }
 
 .logo-set {
-  margin-left: 20px;
+  margin-left: -10px;
   margin-right: auto;
+}
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.img-resize {
+width: 64px;
+height: 64px;
+overflow: hidden;
+text-align: center;
 }
 
 .logo-set2 {
   margin-left: 20px;
   margin-right: auto;
+}
+
+.display-3-edit {
+  font-family: 'Kanit', sans-serif;
+  font-size:3.5rem;
+  font-weight:bold;
+  line-height:1.2
+}
+
+.right {
+  margin-left: -80px;
+  margin-right: auto;
+
+}
+
+
+.txt-2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a1a1a;
 }
